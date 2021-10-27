@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Emu Loader: Multiple Systems Frontend</title>
+    <meta content="Ciro Alfredo Consentino" name="author">
+    <link rel="stylesheet" type="text/css" media="all" href="/page_styles.css">
+</head>
+<body>
+    <div id="logo"></div>
+    <div class="topnav">
+        <a class="active" href="index.htm">News</a>
+        <a href="features.htm">Features</a>
+        <a href="changelog.htm" target="_blank">Change Log</a>
+        <a href="downloads.htm">Downloads</a>
+        <a href="screenshots.htm">Screenshots</a>
+        <a href="screenshots4K.htm">Screenshots 4K</a>
+        <a href="http://www.mameworld.info/ubbthreads/postlist.php?Cat=&amp;Board=emuloader" target="_blank">Forum</a>
+        <a href="systems_emulators.htm">Systems/Emulators</a>
+        <a href="oldnews.htm">Old News</a>
+        <a href="history.htm" target="_blank">History</a>
+        <a href="mailto:ciroconsentino@gmail.com">Contact</a>
+    </div>
+    <br>
+
+    <div id="inner_box">
+        <div id="contents_title">October 27, 2021 [version 8.9.4 released]</div>
+        <div id="contents_text">
+            &nbsp; &nbsp; "
+            <span style="font-style: italic;">This is not the splash screen you're looking for!</span>
+            "
+            <br>
+            After years of suffering,&nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">I finally&nbsp;found a way to make the splash screen not to show up on top of other applications</span>
+            .
+            While games lists are being created/scanned, you can do something else
+            without that annoying splash screen popping up constantly.
+            <span style="font-weight: bold;">Not yet fixed</span>
+             for a
+            <span style="font-weight: bold;">clean install</span>
+             though.
+            <br>
+            <br>
+            &nbsp; &nbsp; I have created a new
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">RGB Color Picker dialog</span>
+             from scratch, named
+            <span style="font-weight: bold; font-style: italic;">Color Picker Ex</span>
+            . It's fast, lightweight and easy to use.
+            <br>
+            It even comes with a HEX edit box so you can enter a color in HEX format. It replaces the jurassic Windows color picker dialog.
+            <br>
+            <br>
+            &nbsp; &nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Search bar edit box&nbsp;locked and inaccessible at startup, is now fixed</span>
+            . Another bug, making the
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">games list not focused at startup</span>
+            , is also fixed.
+            <br>
+            Both bugs were caused by a function that removes&nbsp;
+            <span style="font-weight: bold;">Delphi 7's hidden form</span>
+             trickery. Moving this function from the main&nbsp;form's
+            <span style="font-weight: bold;">OnActivate()</span>
+             event to the
+            <span style="font-weight: bold;">OnShow()</span>
+             event,&nbsp;fixes it.
+            <br>
+            I
+            spent 2 weeks debugging the frontend's startup code to find the little
+            devil that was&nbsp;causing these issues. But I also ended
+            up&nbsp;optimizing&nbsp;the frontend's startup code in the process so,
+            it's a win-win.
+        </div>
+        <div class="TRON2"></div>
+    </div>
+    <br>
+    <div id="inner_box">
+        <div id="contents_title">September 29, 2021 [version 8.9.3 released]</div>
+        <div id="contents_text">
+            &nbsp; &nbsp; A new update with some
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">bug fixes</span>
+             and support for the new&nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Audio Compressor</span>
+             MAME
+            <span style="font-weight: bold;">setting</span>
+            .
+            <br>
+            The downloads page still requires some tweaking.
+        </div>
+        <div class="TRON2"></div>
+    </div>
+    <br>
+    <div id="inner_box">
+        <div id="contents_title">September 18, 2021 [website two point O]</div>
+        <div id="contents_text">
+            &nbsp; &nbsp; New website!
+            <br>
+            I've been working
+            on this new look for a few days, it looks a lot better and easier to
+            navigate. Everything was updated including the
+            <span style="font-weight: bold; color: rgb(0, 172, 230);">screenshots</span>
+             page. The
+            change log file format was also updated, including the
+            <span style="font-weight: bold; color: rgb(0, 172, 230);">changelog.htm</span>
+             file
+            distributed with the frontend package.
+            <span style="font-weight: bold; color: rgb(0, 172, 230);">History</span>
+             page will be updated over
+            time.
+        </div>
+        <div class="TRON2"></div>
+    </div>
+    <br>
+    <div id="inner_box">
+        <div id="contents_title">September 01, 2021 [version 8.9.2 released]</div>
+        <div id="contents_text">
+            &nbsp; &nbsp; One more. :)
+            <br>
+            Some bug fixes and new stuff for MAME. A bunch of
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">console/computer system icons were updated</span>
+             and they all got a 256x256 resolution icon.
+            <br>
+            This is the last big pack update, I promisse...
+            <br>
+            &nbsp; &nbsp; Contens of
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">mameinfo.dat</span>
+             and
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">messinfo.dat</span>
+             are&nbsp;
+            <span style="font-weight: bold;">handled separately</span>
+            . This fixes wrong game info being shown in
+            <span style="font-weight: bold;">Game Documents</span>
+             feature.
+            <br>
+            <br>
+            &nbsp; &nbsp; Support for
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">new MAME&nbsp;game info</span>
+            , read from
+            <span style="font-weight: bold;">-listxml</span>
+
+            output. They might be useful for a future frontend improvement... or
+            not. You need to create a new MAME games list so they can be used:
+            <br>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">cocktail mode</span>
+            <br>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">cocktail status</span>
+            <br style="font-weight: bold; color: rgb(204, 153, 0);">
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">driver&nbsp;protection</span>
+             tag
+            <br>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">requiresartwork</span>
+             tag
+            <br>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">lan</span>
+             tag
+            <br>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">ramoption</span>
+             tag
+            <br>
+            <br>
+            &nbsp; &nbsp; I forgot to support some
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">mame.ini settings</span>
+             in
+            <span style="font-weight: bold;">MAME Settings</span>
+             screen:
+            <br>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Directory To Share With Emulated Machines</span>
+             (-share)
+            <br>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Path To Loose Software</span>
+             (-swpath)
+            <br>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Path For LUA Plugins To Store Data, Read/Write</span>
+             (-share_directory)
+            <br>
+            <br>
+            &nbsp; &nbsp; New&nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Machine Slots / Media Info</span>
+             panel in&nbsp;
+            <span style="font-weight: bold;">Custom Parameters</span>
+             screen. You can see a
+            <span style="font-weight: bold;">list of supported MAME machines</span>
+             for the softlist game being edited. Select one of those machines to view a
+            <span style="font-weight: bold;">list of supported slots and supported media options</span>
+            .
+            <br>
+            This feature is really handy when creating&nbsp;custom parameters for a softlist game.
+            <br>
+            <br>
+            &nbsp; &nbsp; I think I've done all the improvements I wanted to. It only took me 4 months of non-stop work.
+            <br>
+            Now I can finally rest and go back playing my PC games,
+            <span style="font-style: italic;">cough...</span>
+             Resident Evil Village
+            <span style="font-style: italic;">...cough</span>
+             :) :)
+            <br>
+            Have fun!
+            <br>
+        </div>
+        <div class="TRON2"></div>
+    </div>
+    <br>
+    <div id="inner_box">
+        <div id="contents_title">August 13, 2021 [version 8.9.1 released]</div>
+        <div id="contents_text">
+            &nbsp; &nbsp; A few oopsies... I made.
+            <br>
+            Some minor bug fixes in this build, and&nbsp;I forgot to include the
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">updated logo.png</span>
+             for standard resolution. I tweaked the colors a little bit and added&nbsp;more sprites in there. :D
+            <br>
+            &nbsp;
+            &nbsp; Tweaks were made to better&nbsp;handle&nbsp;requirements
+            detection&nbsp;for MAME&nbsp;softlist games. In a computer machine, the
+            frontend was trying to load a device set &nbsp;as a cartridge instead
+            of enabling that device&nbsp;in the machine's&nbsp;slot1, and a couple
+            more bugs in other console machines.
+            <br>
+            <br>
+            I think it might be
+            time&nbsp;to choose a new theme for the splash screen, this apocalyptic
+            theme is getting old, no ? Not that it's not a good one...
+            <br>
+            <br>
+            &nbsp; &nbsp; New MAME feature:&nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">custom parameters</span>
+            .
+            <br>
+            You
+            can create custom parmeters for a softlist game, a software
+            list&nbsp;or&nbsp;MAME machine. Do things&nbsp;like,&nbsp;attach a
+            cassete tape, a special cartridge, a floppy drive or another device.
+            Enable a special feature in a computer machine that you cannot do with
+            MAME settings .ini files.
+            <br>
+            <br>
+            &nbsp; &nbsp; Added support for another Apple II emulator,&nbsp;
+            <a href="https://paleotronic.com/software/microm8/" target="_blank">
+                <span style="font-weight: bold;">microM8 Apple II Emulator</span>
+            </a>
+            . Interesting emulator, this one.
+            <br>
+            In the
+            <span style="font-style: italic;">Apple IIgs</span>
+             front, emulator&nbsp;
+            <a href="https://apple2.gs/plus/" target="_blank">
+                <span style="font-weight: bold;">GSplus" Apple IIgs Emulator</span>
+            </a>
+             is now supported.
+            <br>
+            <br>
+            &nbsp; &nbsp; Emu Loader is ready for
+            <span style="font-weight: bold;">MAME v0.235</span>
+             with the new
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">BGFX backend</span>
+             options:
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Direct3D 12</span>
+             and
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Vulkan</span>
+            . I guess you're gonna have to wait a few more weeks to try these renderers...
+            <br>
+            <br>
+            &nbsp;
+            &nbsp; The full pack still have all 4K content in it, but this time you
+            can grab the update package if you already have v8.9. It will take me
+            more time to sort some things out and update the downloads page with
+            all updated content, including Photoshop's .psd files with all my work.
+            Have fun!
+        </div>
+        <div class="TRON2"></div>
+    </div>
+    <br>
+    <div id="inner_box">
+        <div id="contents_title">August 04, 2021 [version 8.9 released]</div>
+        <div id="contents_text">
+            &nbsp; &nbsp; I'm back! Lots of stuff happened
+            since February. I've been working hard on Emu Loader for the past
+            4&nbsp;months,&nbsp;non-stop. I even stopped&nbsp;playing&nbsp;PC games &nbsp;since March
+            2021 to focus on this project... what did I miss ?
+            <br>
+            <span style="font-weight: bold;">You'll need to download&nbsp;the full package</span>
+
+            this time around&nbsp;since all files have been updated (icons and
+            images).&nbsp;Upgrading from&nbsp;previous build&nbsp;can still be
+            done. In future builds, part of&nbsp;the 4K content will be distributed
+            separately to make the full package smaller (not everyone uses a 4K
+            monitor/TV).
+            <br>
+            <br>
+            &nbsp; &nbsp; First things first. I recommend to
+            <span style="font-weight: bold;">delete</span>
+             the entire
+            <span style="color: rgb(204, 153, 0); font-weight: bold;"> app_path\resources</span>
+            \ folder if you want
+            <span style="font-weight: bold;">to prevent leftover files</span>
+
+            (this is not required). You can overwrite your current install with
+            this build and execute it without worries. All require updates will be
+            done once at startup.
+            <br>
+            &nbsp; &nbsp; To actually
+            <span style="font-weight: bold;">fix some of the crashes</span>
+            &nbsp;I had to
+            <span style="font-weight: bold;">update&nbsp;the format</span>
+
+            of a
+            few files (non MAME/arcade related stuff). You can make
+            a backup copy of these folders/files&nbsp;before running this build, just in
+            case.&nbsp;The following will be updated:
+            <br>
+            - games files in&nbsp;
+            <span style="font-weight: bold; color: rgb(153, 255, 153);">\console_computer\games\ </span>
+            folder
+            <br>
+            -&nbsp;played games files in&nbsp;
+            <span style="font-weight: bold; color: rgb(153, 255, 153);">\console_computer\played_games\</span>
+             folder
+            <br>
+            -&nbsp;games extra info files in&nbsp;
+            <span style="font-weight: bold; color: rgb(153, 255, 153);">\console_computer\games_extra_data\</span>
+             folder
+            <br>
+            <br>
+            &nbsp; &nbsp; The star of this build&nbsp;is
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">support for 4K screen resolution with the new 4K layouts</span>
+             (minimum
+            <span style="font-weight: bold;">3840x2160 resolution&nbsp;equired</span>
+            ).
+            <br>
+            Be aware that
+            <span style="font-weight: bold;">
+                you must disable screen&nbsp;DPI scale for
+                <span style="color: rgb(204, 153, 0);">EmuLoader.exe</span>
+                 in order for it to work
+            </span>
+            .
+            If your Windows screen DPI scale is already at 100% you don't have to
+            do a thing.&nbsp;Forms, fonts&nbsp;and controls will resize to take
+            advantage of the 4K resolution... and it looks so beautiful! :)
+            <br>
+            &nbsp; &nbsp; There's&nbsp;even a
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">new 4K splash screen</span>
+            .
+            Some of the sprites were updated with higher resolution versions and
+            others scaled up (no upscale filters were used). The regular logo got some minor
+            updates&nbsp;as well... I really need to re-create the splash screen&nbsp;with a
+            different theme. This
+            <span class="ILfuVd NA6bn">
+                <span class="hgKElc">apocalyptic theme is getting old!</span>
+            </span>
+            <br>
+            Light mode is starting to&nbsp;
+            <span style="font-style: italic;">fade away</span>
+             as Emu Loader can turn all elements to the&nbsp;
+            <span style="font-style: italic;">dark side</span>
+             now, even if your Windows 10 is not set to use a dark theme. Who still uses the frontend's&nbsp;light mode anyway&nbsp;!?
+            <br>
+            <br>
+            &nbsp; &nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">All icons and images have been updated</span>
+            , and&nbsp;most of the icons got 68x68 and 128x128 size versions, for the 4K mode.
+            <span style="font-weight: bold;">You can enable&nbsp;PNG compression tag</span>
+             in&nbsp; .ico files now,&nbsp;this is finally supported by the frontend&nbsp;thanks to the
+            <span style="font-weight: bold;">
+                <span style="color: rgb(0, 172, 230);">PrivateExtractIcons()</span>
+                 WinAPI
+            </span>
+            . Due to PNG compression, the file size of all .ico files have reduced considerably.
+            <br>
+            <br>
+            &nbsp; &nbsp; While implementing&nbsp;4K layouts,&nbsp;I was able to find and
+            <span style="font-weight: bold;">fix tons of internal&nbsp;bugs and tweak lots and lots of functions in the source code</span>
+            . I was able to improve stability even further.
+            <br>
+            Both&nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Supermodel3</span>
+             and
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Demul</span>
+             were updated to&nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">support latest SVN builds</span>
+            . You'll need to re-create the games list to actually use the new stuff. Not doing so will
+            <span style="font-weight: bold;">not</span>
+             prevent &nbsp;you from playing their games.
+            <br>
+            <br>
+            &nbsp; &nbsp; A special thanks to
+            <span style="font-weight: bold;">Fabian Leonel</span>
+             for creating
+            <span style="font-weight: bold;">system type icons</span>
+            , they look amazing!
+            <br>
+            (
+            <span style="font-weight: bold;">systemtype_arcade.ico</span>
+            ;
+            <span style="font-weight: bold;">systemtype_computer.ico</span>
+            ;
+            <span style="font-weight: bold;">systemtype_console.ico</span>
+            ;
+            <span style="font-weight: bold;">systemtype_handheld.ico</span>
+            )
+            <br>
+            <br>
+            &nbsp; &nbsp;
+            <span style="font-weight: bold;">
+                <span style="color: rgb(255, 102, 102);">WARNING:</span>
+                 As of this version,
+                <span style="color: rgb(204, 153, 0);">Windows XP is no longer supported</span>
+                 and Emu Loader
+                <span style="color: rgb(255, 102, 102);">will not run</span>
+                 on that OS anymore!
+            </span>
+            <br>
+            <br>
+            &nbsp; &nbsp; So much has changed in this build, mostly internally, but
+            <span style="font-weight: bold;">you will notice improvements in general</span>
+
+            even without the 4K mode. I hope you enjoy this build as much as I did
+            coding it. Make sure to check the change log for a complete list of
+            &nbsp;changes, which is&nbsp;extensive!
+        </div>
+        <div class="TRON2"></div>
+    </div>
+    <br>
+    <div id="inner_box">
+        <div id="contents_title">February 25, 2021 [version 8.8.8 released]</div>
+        <div id="contents_text">
+            &nbsp; &nbsp;
+            <span style="font-weight: bold; font-style: italic;">To triple infinity... and beyond!</span>
+            <br>
+            I'm starting to use
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">TNT Unicode Components Pack</span>
+             in&nbsp;the frontend.
+            <span style="color: white;">I should have done this a long time ago. Added </span>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">TntRichEdit control </span>
+            <span style="color: white;">so</span>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">&nbsp;Unicode texts </span>
+            <span style="color: white;">can be displayed</span>
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">&nbsp;in Game Docs </span>
+            <span style="color: white;">panel and </span>
+            in message boxes.&nbsp;You might
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">need a richedit20.dll </span>
+            <span style="color: white;">file</span>
+
+            so non-English texts can be properly displayed. I tested the frontend
+            with the file supplied by Windows 10 and the results are&nbsp;awful.
+            You can do the same test on your system, try renaming the DLL and
+            restart the frontend. If &nbsp;English / non-English mixed texts are
+            good, you don't need this DLL.
+            <br>
+            <br>
+            &nbsp; &nbsp; For this build, and this build alone, such
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">DLL file is supplied with the binary packages</span>
+            .
+            Future releases will have a separate download link. Why ?
+            You might already have a&nbsp;DLL in your system that produces good
+            English / non-English mixed texts (usually when Microsoft Office is
+            installed).
+            <br>
+            File is from the discontinued
+            <span style="font-style: italic; font-weight: bold;">Microsoft Word Viewer</span>
+            . I tested 4 different DLL files and they all produce different results. Why, Microsoft... WHY??!!!
+            <br>
+            <br>
+            &nbsp; &nbsp; I rewrote the parsing function of MAME dat files and&nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">Game Docs</span>
+             feature
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">is</span>
+             now
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">lightning&nbsp;fast</span>
+            !
+            <br>
+            Other tweaks were made, and history (xml or dat)&nbsp;shows texts correctly. In fact,
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">history.xml is&nbsp;the preferred file</span>
+            .
+            <br>
+            <br>
+            &nbsp; &nbsp; New &nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">4K Mode (2160p)</span>
+            .
+            But why ? If you're like me, have a 4K monitor and use screen DPI scale
+            at 100%, everything looks tiny, and so does the frontend.
+            <br>
+            By
+            enabling this setting, you will get resized dialogs with bigger fonts,
+            bigger buttons and other enlarged stuff. I&nbsp;haven't&nbsp;tested this feature with DPI
+            scale other than 100%...
+            <br>
+            This is my personal
+            <span style="font-style: italic;">dream come true</span>
+             feature ever since I got a 4K monitor back in 2017. A font sized 16 looks so much better compared to&nbsp;size 9!
+            <br>
+            <span style="font-weight: bold; color: rgb(255, 102, 102);">Warning:</span>
+
+            Do not attempt to enable this setting if your screen resolution is
+            lower than 3840x2160,&nbsp;the frontend does not&nbsp;validate
+            Windows&nbsp;resolution.
+            <br>
+            <br>
+            &nbsp; &nbsp;
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">More tweaks to message boxes</span>
+            , better font colors and texts. Several message boxes were also&nbsp;updated with night mode colors. They&nbsp;can
+            <span style="font-weight: bold; color: rgb(204, 153, 0);">display Unicode texts</span>
+            &nbsp;too (see command line texts). The
+            <span style="font-style: italic;">Run Game Confirmation Dialog</span>
+             in the new 4K mode looks awesome.
+            <br>
+            <br>
+            &nbsp; &nbsp; I've made some modifications to the
+            <span style="font-weight: bold;">TNT Unicode Components Pack</span>
+
+            so, if you already have&nbsp;it installed in your Delphi compiler, you
+            must install&nbsp;my modified pack or some frontend features will not
+            work, and Delphi will give compilation errors. I couldn't find a way to
+            create new "extra" controls to keep the library with
+            unaltered&nbsp;code.
+            <br>
+            <br>
+            I'm sure I forgot one or two things I worked on, for now, it will do. :)
+        </div>
+        <div class="TRON2"></div>
+    </div>
+    <br>
+</body>
+</html>
