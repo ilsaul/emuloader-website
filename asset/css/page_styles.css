@@ -5,7 +5,7 @@ body {
   font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
   background-position: left top;
   background-attachment: fixed;
-  background-image: url(/web/20250830032526im_/https://emuloader.mameworld.info/images/bkgrd_dark.png);
+  background-image: url(/asset/images/bkgrd_dark.png);
 }
 a:link {
   color: #f4a460; /* SandyBrown; */ /* #ffcc33; */
@@ -19,7 +19,7 @@ a:hover {
 
 #logo {
   height: 300px;
-  background-image: url(/web/20250830032526im_/https://emuloader.mameworld.info/images/logo2.png);
+  background-image: url(/asset/images/logo2.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -167,7 +167,7 @@ a:hover {
   /* justify-content: center; /* /* does not work! */
   /* padding: 4px; */
   /* background-color: blue; */
-  
+
 }
 
 /* Create four equal columns that sits next to each other */
@@ -182,7 +182,7 @@ a:hover {
   margin-bottom: 18px; */
   padding: 8px;
   vertical-align: middle;
-  
+
   /* min-width:  198px;
   max-width:  198px;
   max-height: 198px; */
@@ -205,16 +205,16 @@ a:hover {
 }
 #downloads_celldate {
   width: 270px;
-  padding-left: 0.2rem; 
+  padding-left: 0.2rem;
 }
 #downloads_cellfilesize {
-  /* color: #cccccc; silver ? */ 
+  /* color: #cccccc; silver ? */
   width: 90px;
-  padding-left: 0.2rem; 
+  padding-left: 0.2rem;
 }
 #downloads_celltitle {
   width: 650px;
-  padding-left: 0.2rem; 
+  padding-left: 0.2rem;
 }
 
 #downloads_tablerow:hover, #system_cells:hover { /* tr:hover {   */
@@ -285,7 +285,7 @@ h2 {
   font-weight: bold;
   text-shadow: 1px 1px black;
   /* background-position:0px 3px;
-  background-image:url('/web/20250830032526im_/https://emuloader.mameworld.info/entry.gif'); 
+  background-image:url('/web/20250722091157im_/https://emuloader.mameworld.info/entry.gif');
   background-repeat:no-repeat; */
 }
 h3 {
@@ -312,9 +312,15 @@ h2:before {
 }
 /* h3:before {
   content: '\25fc'; /* '\25a0'; */
-  margin-right: 5px;
+/*  margin-right: 5px;
   color: DodgerBlue;
   vertical-align: middle;
   display: inline-block;
   margin-top: -4px;
 } */
+.email {
+    color: #f4a460; /* SandyBrown; */
+    text-decoration: underline; /* Sottolineatura */
+    cursor: default; /* Mostra la freccia normale invece della manina, per far capire che non è cliccabile */
+    font-family: monospace; /* Opzionale: dà un look più "tecnico" */
+}
