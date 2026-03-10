@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function ()
 
 function Rot18 ()
 {
-	this.lowercase = new Rotater('a', 'z', 15);
-	this.uppercase = new Rotater('A', 'Z', 15);
-	this.digits = new Rotater('0', '9', 6);
+	this.lowercase = new Rotater('a', 'z', 13); // 15
+	this.uppercase = new Rotater('A', 'Z', 13); // 15
+	this.digits = new Rotater('0', '9', 5); // 6
 }
 
 Rot18.prototype.encode = function (text)
